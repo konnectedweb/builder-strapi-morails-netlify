@@ -1,10 +1,8 @@
 import { useState } from "react";
 // @builder.io
 import { BuilderComponent } from "@builder.io/react";
-import CStrapi from "./strapi";
 const CBuilder = () => {
   const [notFound, setNotFound] = useState(false);
-
   return (
     <>
       {!notFound ? (
@@ -21,7 +19,6 @@ const CBuilder = () => {
       ) : (
         "Not Found"
       )}
-      <CStrapi />
     </>
   );
 };

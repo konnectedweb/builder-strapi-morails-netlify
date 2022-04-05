@@ -4,8 +4,8 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { builder } from "@builder.io/react";
 // @moralis
 import { MoralisProvider } from "react-moralis";
-// @component
-import CBuilder from "./components/builder";
+// @pages
+import Home from "./pages/home";
 
 builder.init("166036aec7f845c3a2523ae75b2d3166");
 
@@ -18,7 +18,7 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <Routes>
-            <Route path="/" element={<CBuilder />} />
+            <Route path="/" element={<Home />} />
           </Routes>
         </div>
       </BrowserRouter>

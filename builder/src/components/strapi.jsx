@@ -11,7 +11,7 @@ const CStrapi = () => {
     const fetchData = async () => {
       // @strapi
       const posts = await axios.get(
-        process.env.REACT_APP_STRAPI_API || "" + "api/nfts"
+        process.env.REACT_APP_STRAPI_API + "api/nfts"
       );
       if (isSubscribed) {
         console.log(posts.data.data);

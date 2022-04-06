@@ -8,7 +8,6 @@ const CMoralis = () => {
     if (!isAuthenticated) {
       await authenticate({ signingMessage: "Log in using Moralis" })
         .then(function (user) {
-          console.log("logged in user:", user);
           console.log(user.get("ethAddress"));
         })
         .catch(function (error) {
@@ -19,7 +18,6 @@ const CMoralis = () => {
 
   const logOut = async () => {
     await logout();
-    console.log("logged out");
   };
 
   return (
